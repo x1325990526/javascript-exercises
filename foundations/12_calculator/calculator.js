@@ -16,13 +16,8 @@ const multiply = function(arr) {
 };
 
 const power = function(base, exp) {
-  let result = 1;
-  for (let i = 0;i < exp; i++) {
 
-    result *= base;
-    
-  }
-  return result;
+  return base ** exp;
 	
 };
 
