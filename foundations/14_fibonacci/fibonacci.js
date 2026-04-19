@@ -1,9 +1,13 @@
 const fibonacci = function(x) {
 
+    if(typeof x !== 'number'){
+        x = parseInt(x);
+    } 
+    
     if(x == 0) return 0;
-    if(x <= 0) return "OOPS";
+    if(x < 0) return "OOPS";
 
-    arr = [1,1];
+    const arr = [1,1];
     if(x < 3) return arr[x-1];
     
     let count = x -2;
