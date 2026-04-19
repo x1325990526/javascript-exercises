@@ -3,11 +3,7 @@
  * @param {[]} books
  */
 const getTheTitles = function(books) {
-    const arr = [];
-    for (const book of books) {
-        arr.push(book.title);
-    }
-    return arr;
+    return books.map(book => book.title);
 };
 
 // Do not edit below this line
